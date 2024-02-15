@@ -1,0 +1,56 @@
+<!-- making a project of  mongodb database and login and singup -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile Page</title>
+</head>
+<link rel="stylesheet" href="/stylesheets/profile.css">
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="main">
+        <img class="profile-picture"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIX0Qc0GHXNCLBmmlhf-l9zvEgzTCdgsPFUQ&usqp=CAU"
+          alt="Profile Picture">
+      </div>
+      <h2 class="name">
+        <%= user.fullname %>
+      </h2>
+      <h3 class="username">@<%= user.username %>
+      </h3>
+      <p class="tagline">Lorem ipsum dolor sit amet consectetur.</p>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <a href="/logout" class="button">Logout</a>
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+        <div class="input">
+          <input type="text" name="filecaption" placeholder="some caption" class="input-1">
+          <input type="file" name="file" class="input-2">
+          <input type="submit" class="input-3">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="contain">
+    <div class="cards">
+      <% user.posts.forEach((post) => { %>
+        <div class="img-cards">
+          <img src="/images/uploads/<%= 
+          post.image%>" alt="" class="card-img-top" >
+          <div class="body-img">
+            <div class="card-title"><%= post.ImageText %></div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>  
+
+    </div>
+  </div>
+</body>
+</html>

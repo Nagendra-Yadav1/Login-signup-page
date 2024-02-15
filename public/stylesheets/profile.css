@@ -1,0 +1,137 @@
+/* making a project of  mongodb database and login and singup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+
+    justify-content: center;
+
+  }
+  
+  .card {
+    height:370px;
+    width: 600px;
+    text-align: center;
+    justify-content: center;
+    }
+  
+  .profile-picture {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .name {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .username {
+    font-size: 18px;
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  .tagline,
+  .description {
+    color: #555;
+    margin: 10px 0;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #879eb7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+  .input{
+    margin-top: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    }
+
+    .input-1{
+      background: cyan;
+      border: none;
+      text-align: center;
+      border-radius: 20px;
+      font-size: 20px;
+    }
+
+    .input-2{
+      background-color: rgb(57, 67, 67);
+      border-radius: 20px;
+      border: none;
+
+    }
+
+    .input-3{
+      background-color: #879eb7;
+      color: #fff;
+      border-radius: 20px;
+      width: 100px;
+      border: none;
+
+    }
+
+
+    .input-3:hover{
+      cursor: pointer;
+      background-color: #0056b3;
+    }
+
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+.contain{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.card-img-top{
+  height: 270px;
+  border-radius: 10px;
+  width: 299px;
+}
+
+
+.body-img{
+  background-color: red;
+  height: 40px;
+  width: 297px;
+  color: black;
+  padding-left: 2px;
+  background-color: cyan;
+  border-radius: 10px;
+
+  
+}
